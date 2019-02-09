@@ -1,0 +1,53 @@
+body{
+    background-image: url("images/meal-ideas.jpg")
+
+}
+form{
+    display:inline-block; 
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: left;
+    background-color: floralwhite;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#butn{
+    float: right;
+    margin-top: -30px;
+    background-color: dodgerblue; 
+	border-color: dodgerblue;
+	border-radius: 1px;
+	padding: 10px 20px 10px 20px; 
+	margin-right: 0px;
+	color: white;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    margin-bottom: 14px;
+    padding-top: 20px;
+  }
+
+  input{
+      margin-bottom: 15px;
+      border-radius: 3px;
+      border:  1px solid ;
+  }
+  .input-field {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .input-field1 {
+    padding: 10px;
+    outline: none;
+  }
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }
