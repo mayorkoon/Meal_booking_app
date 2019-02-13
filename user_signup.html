@@ -14,8 +14,12 @@
 	<div style="display:block; text-align: center">
 		<form>
 			<p id="login">Sign Up</p>
-			<input type="radio" name="Caterer" value="Caterer" checked > Caterer
-			<input type="radio" name="customer" value="customer" style="margin-left: 50px;"> Customer
+			<div>
+				<input type="radio" name="user" value="Caterer" id="user1">
+				<label for="user1">Caterer</label> 
+				<input type="radio" name="user" value="customer" id="user2" style="margin-left: 50px;"> 
+				<label for="user2">customer</label>
+			</div>
 			<div class="input-field">
 				<i class="fa fa-font icon"></i>
 				<input class="input-field1" type="text" name="First Name" placeholder="First Name" style="width: 300px;height: 30px;"><br>
@@ -41,7 +45,7 @@
 				<input class="input-field1" type="Password" name="Password" placeholder="Confirm Password" style="width: 300px;height: 30px;"><br>
 			</div>
 			<input type="checkbox" name="Terms" value="Remember">I agree to the <a href="#"> Terms of services</a> &<a href="#"> Privacy policy</a><br>
-			<a href="user login.html"><input type="button" name="Login" value="SIGN UP" id="butn1"><br></a>
+			<a href="user_login.html"><input type="button" name="Login" value="SIGN UP" id="butn1"><br></a>
 			
 			
 		</form>

@@ -31,7 +31,8 @@ form{
 	border-radius: 1px;
 	padding: 10px 20px 10px 20px; 
 	margin-right: 0px;
-	color: white;
+    color: white;
+    cursor: pointer;
 }
 #butn1{
 	float: right;
