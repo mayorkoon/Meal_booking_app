@@ -1,4 +1,5 @@
 import dummyData from '../utilities/dummyData';
+
 import Meal from '../models/meal.model';
 
 const MealService = {
@@ -8,12 +9,14 @@ const MealService = {
             newMeal.id = meal.id;
             newMeal.name = meal.name;
             newMeal.size = meal.size;
-            newMeal.price = meal.size;   
+            newMeal.price = meal.price;  
+            return newMeal; 
         });
         return validMeals;
+        console.log(validMeals);
     },
     addMeal(meal) {
-        mealLength = dummyData.meals.length;
+        const mealLength = dummyData.meals.length;
         const lastId = dummyData.meals[mealLength - 1].id; 
         const newId = lastId + 1;
         meal.id = newId;
@@ -21,7 +24,7 @@ const MealService = {
         return meal;
     },
     getAMeal(id) {
-        const meal = dummyData.meals.find(meal => meal.id = id);
+        const meal = dummyData.meals.find(meal => meal.id == id);
         return meal || {};
     }
 };
