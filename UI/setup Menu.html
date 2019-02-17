@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todays Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="body1">
+    <header>
+
+        <a href="admin page.html" id="logo"><h3>BOOK-A-MEAL</h3></a>
+                
+        <nav>
+                
+            <a href="#" id="menu-icon"></a>
+                
+            <ul>
+            <div class="dropdown">    
+                <li><a href="#"><img src="Images/notif.png" width="40px" height="40px"></a></li>
+                <div class="dropdown-content">
+                    <p><a href="user order.html">A customer placed an order</a></p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="#"><img src="Images/user.png" width="40px" height="40px"></a></li>
+                <div class="dropdown-content">
+                        <p><a href="#">Dashboard</a></p>
+                    <p><a href="admin Order history.html">Order History</a></p>
+                    <p><a href="setup Menu.html">Setup Menu</a></p>
+                    <p><a href="user login.html">Logout</a></p>
+                </div>
+            </div>
+            </ul>
+                
+        </nav>
+                
+    </header>
+
+    <div style="background-color: none; padding: 1%;margin-top: 100px; text-align: center;display: block;">
+        <h3>Setup Menu</h3>
+            <form action="">
+                <p id="login">Setup Menu</p>
+                <hr>
+                <p>Date</p>
+                <div class="input-field" style="margin-top:0px;">
+                    <input class="input-field1" type="date" name="Meal" placeholder="Enter Name" style="width: 300px;height: 30px;"><br>
+                </div>
+                <p>Category</p>
+                <div class="input-field">
+                    <select name="cars" class="input-field">
+                    <option value="volvo">Select Category</option>
+                    <option value="volvo">Breakfast</option>
+                    <option value="saab">Lunch</option>
+                    <option value="saab">Dinner</option>
+                    </select>                
+                </div>
+                <p>Meals</p>
+                <div class="input-field">
+                    <select name="cars" class="input-field">
+                    <option value="volvo">Select Meal</option>
+                    <option value="volvo">Fried rice and chicken</option>
+                    <option value="saab">Jollf rice With 2 beefs</option>
+                    <option value="fiat">Pounded Yam and Egusi soup</option>
+                    <option value="audi">Eba and Efo riro</option>
+                    </select>                
+                </div>
+                <div style="width:50%;">
+                    <p>Image:</p>
+                    <button style="float:right; margin-top:-40px;">Choose image</button>
+                </div>
+                <div style="margin-top:0px; width:100%;">
+                    <input type="button" name="cancel" value="Cancel" id="cancelbtn">
+                    <input type="button" name="create" value="Create" id="createbtn">
+                </div>
+            </form>
+        </div>             
+</body>
+</html>
