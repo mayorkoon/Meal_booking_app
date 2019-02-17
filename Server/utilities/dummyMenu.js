@@ -2,7 +2,7 @@ export default {
     menu: [
         {   
             day: "Monday",
-            category: "Breakfast"
+            category: "Breakfast",
             meals:  [
                         {
                             id: 1,
@@ -26,7 +26,7 @@ export default {
         },
         {   
             day: "Monday",
-            category: "Lunch"
+            category: "Lunch",
             meals:  [
                         {
                             id: 1,
@@ -50,7 +50,7 @@ export default {
         },
         {   
             day: "Monday",
-            category: "Dinner"
+            category: "Dinner",
             meals:  [
                         {
                             id: 1,
@@ -69,7 +69,7 @@ export default {
                             name: 'Ewa agoyin',
                             size: 'Large',
                             price: "350"
-                        },
+                        }
                     ]
         },
     ]
