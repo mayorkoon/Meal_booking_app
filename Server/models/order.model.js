@@ -1,4 +1,4 @@
-class _Orders {
+class Orders {
     constructor() {
       this.orderId = null;
       this.customerName = null;
@@ -10,4 +10,4 @@ class _Orders {
   }
   
   
-  export default _Orders;
+  export default Orders;

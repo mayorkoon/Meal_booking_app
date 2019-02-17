@@ -1,17 +1,17 @@
 import dummyOrder from '../utilities/dummyOrder';
 
-import _Orders from '../models/order.model'
+import Orders from '../models/order.model'
 
 const OrderService = {
     getAllOrders() {
         const allOrders = dummyOrder.orders.map((order) =>{
-            const newOrder = new _Orders();
+            const newOrder = new Orders();
             newOrder.orderId = order.orderId;
             newOrder.customerName = order.customerName;
             newOrder.mealName = order.mealName;
             newOrder.quantity = order.quantity;
             newOrder.price = order.price;
-            newOrder.status=order.status;
+            newOrder.status = order.status;
             return newOrder;
         });
         return allOrders;
