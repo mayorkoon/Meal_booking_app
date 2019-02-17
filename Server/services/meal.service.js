@@ -13,7 +13,6 @@ const MealService = {
             return newMeal; 
         });
         return validMeals;
-        console.log(validMeals);
     },
     addMeal(meal) {
         const mealLength = dummyData.meals.length;
@@ -26,6 +25,9 @@ const MealService = {
     getAMeal(id) {
         const meal = dummyData.meals.find(meal => meal.id == id);
         return meal || {};
+    },
+    deleteMeal(id) {
+        dummyData.meals = dummyData.meals.filter(meal => meal.id != id);
     }
 };
 
