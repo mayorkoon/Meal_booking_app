@@ -9,21 +9,21 @@ const OrderController = {
         }).status(200);
     },
     addOrder (req, res){
-        /*
-            Expect a json of the format
-            {
-                name: "Any Food",
-                size: Large,
-                "price": 900
-            }
-        */
        const newOrder = req.body;
        const createdOrder = OrderService.addOrder(newOrder);
        return res.json({
             status: 'success',
-            data: createdOrder
+            data: createdOrder, 
         }).status(201);
     },
+    updateAnOrder(req, res) {
+        const orderToUpdate = req.body;
+        const updatedOrder = OrderService.updateOrder(orderToUpdate);
+        return res.json({
+          status: 'success',
+          data: updatedOrder,
+        }).status(201);
+      }
 }
 
 export default OrderController;
