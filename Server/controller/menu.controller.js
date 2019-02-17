@@ -15,8 +15,9 @@ const MenuController = {
 
             {
                 day: "day of the week",
+                category: "say breakfast,lunch,dinner",
                 meals: [
-                    collection of meals (likely 3);
+                    collection of meals for each category ;
                 ]
             }
         
@@ -25,7 +26,7 @@ const MenuController = {
         const newMenu = req.body;
         const createdMenu = MenuService.addMenu(newMenu);
         return res.json({
-            status: "new menu successfully created",
+            status: "success",
             data: createdMenu
         }).status(201);
     }

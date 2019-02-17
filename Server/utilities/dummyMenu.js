@@ -30,21 +30,21 @@ export default {
             meals:  [
                         {
                             id: 1,
-                            name: 'Coconut Rice',
+                            name: 'Pounded Yam and Efo riro',
                             size: 'Large',
-                            price: "600"
+                            price: "1200"
                         },
                         {
                             id: 2,
-                            name: 'Fried Rice',
+                            name: 'Amala and Ewedu',
                             size: 'Medium',
-                            price: "700"
+                            price: "1000"
                         },
                         {
                             id: 3,
-                            name: 'Ewa agoyin',
+                            name: 'Eba with Afang soup',
                             size: 'Large',
-                            price: "350"
+                            price: "1500"
                         },
                     ]
         },
@@ -54,22 +54,16 @@ export default {
             meals:  [
                         {
                             id: 1,
-                            name: 'Coconut Rice',
-                            size: 'Large',
+                            name: 'Chicken and chips',
+                            size: 'small',
                             price: "600"
                         },
                         {
                             id: 2,
                             name: 'Fried Rice',
-                            size: 'Medium',
+                            size: 'small',
                             price: "700"
-                        },
-                        {
-                            id: 3,
-                            name: 'Ewa agoyin',
-                            size: 'Large',
-                            price: "350"
-                        },
+                        }
                     ]
         },
     ]
