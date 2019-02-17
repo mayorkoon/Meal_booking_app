@@ -2,10 +2,10 @@ export default {
   meals: [
 
     {
-        id: 1,
-        name: 'Fried Rice',
-        size: 'Medium',
-        price: '500',
+      id: 1,
+      name: 'Fried Rice',
+      size: 'Medium',
+      price: '500',
     },
     {
       id: 2,
