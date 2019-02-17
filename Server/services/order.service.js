@@ -23,6 +23,17 @@ const OrderService = {
         order.orderId = newOrderId;
         dummyOrder.orders.push(order);
         return order;
+    },
+    updateOrder(order) {
+        const { id } = order;
+        const orderToUpdate = dummyOrder.orders.find(order => order.id == id);
+        orderToUpdate.customerName = order.customerName;
+        orderToUpdate.price = order.price;
+        orderToUpdate.quantity = order.quantity;
+        orderToUpdate.mealName = order.mealName;
+        orderToUpdate.status = order.status;
+        dummyOrder.orders[order.id] = orderToUpdate;
+        return orderToUpdate
     }
 };
 
