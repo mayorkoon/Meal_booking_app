@@ -2,10 +2,10 @@ import MenuService from '../services/menu.service'
 
 const MenuController = {
     getMenu(req, res) {
-        const dayMenu = MenuService.getMenu();
+        const dailyMenu = MenuService.getMenu();
         return res.json({
             status: "success",
-            data: dayMenu
+            data: dailyMenu
         }).status(200);
     },
 
@@ -24,10 +24,10 @@ const MenuController = {
         */
 
         const newMenu = req.body;
-        const createdMenu = MenuService.addMenu(newMenu);
+        const addedMenu = MenuService.addMenu(newMenu);
         return res.json({
             status: "success",
-            data: createdMenu
+            data: addedMenu
         }).status(201);
     }
 }
