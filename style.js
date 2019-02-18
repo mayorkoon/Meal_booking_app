@@ -1,4 +1,4 @@
-document.getElementById('love').addEventListener("click", function() {
+document.getElementById('confirmbtn').addEventListener("click", function() {
 	document.querySelector('.nw-modal').style.display = "flex";
 });
 

@@ -91,9 +91,14 @@ form{
 	font-size: 30px;
 	margin-top: 0px;
 }
-    
-    
-
+.cart {
+    background-color:white;
+    margin-top:130px; 
+    width: 50%;
+    margin-left: auto; 
+    margin-right: auto;
+    height: 550px;
+}  
 .icon {
     padding: 10px;
     background: dodgerblue;
@@ -213,6 +218,12 @@ form{
          background-color: dodgerblue;
          color: black;
       }
+      #confirmbtn{
+        width:150px;
+         height:50px;
+         background-color: dodgerblue;
+         color: black;
+      }
 
 
       #button a:visited{
@@ -228,15 +239,18 @@ form{
           top: 0;
           display: flex;
           justify-content: center;
+          text-align: center;
           align-items: center;
           display: none;
       }
       .modal-content{
           width: 500px;
-          height: 300px;
+          height: 200px;
           background-color: white;
           border-radius: 4px;
           position: relative;
+          text-align: center;
+          align-items: center;
 
       }
       .close{
