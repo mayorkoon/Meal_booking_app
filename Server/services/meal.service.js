@@ -22,22 +22,21 @@ const MealService = {
     return meal;
   },
   getAMeal(id) {
-    const meal = dummyData.meals.find(meal => meal.id == id);
+    const meal = dummyData.meals.find(meal => meal.id === id);
     return meal || {};
   },
   deleteMeal(id) {
-    dummyData.meals = dummyData.meals.filter(meal => meal.id != id);
+    dummyData.meals = dummyData.meals.filter(meal => meal.id !== id);
   },
   updateMeal(meal) {
     const { id } = meal;
-    const mealToUpdate = dummyData.meals.find(meal => meal.id == id);
+    const mealToUpdate = dummyData.meals.find(meal => meal.id === id);
     mealToUpdate.name = meal.name;
     mealToUpdate.price = meal.price;
     mealToUpdate.size = meal.size;
     dummyData.meals[meal.id] = mealToUpdate;
-    return mealToUpdate
+    return mealToUpdate;
   }
-  
 };
 
 export default MealService;
