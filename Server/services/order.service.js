@@ -27,6 +27,7 @@ const OrderService = {
     updateOrder(order) {
         const { id } = order;
         const orderToUpdate = dummyOrder.orders.find(order => order.id == id);
+        orderToUpdate.orderId = order.orderId;
         orderToUpdate.customerName = order.customerName;
         orderToUpdate.price = order.price;
         orderToUpdate.quantity = order.quantity;
