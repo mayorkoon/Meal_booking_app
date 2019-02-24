@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon --exec babel-node index.js",
-    "test": "mocha --require @babel/register test/*.js"
+    "start": "node Server/index.js",
+    "dev": "nodemon --exec babel-node Server/index.js",
+    "test": "mocha --require @babel/register Server/test/*.js"
   },
   "author": "",
   "license": "ISC",
