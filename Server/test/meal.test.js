@@ -1,10 +1,10 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-import app from '../index.js';
+import app from '../index';
 
 chai.use(chaiHttp);
-let should = chai.should();
-let expect = chai.expect;
+// let should = chai.should();
+const { expect } = chai;
 
 describe('GET /', () => {
   it('should return all meals', (done) => {
@@ -19,14 +19,14 @@ describe('GET /', () => {
         done();
       });
   });
-})
+});
 
 describe('GET /:id', () => {
   it('should return specific meal', (done) => {
     chai.request(app)
       .get('/server/v1/meals/2')
       .end((err, res) => {
-        const data = res.body.data;
+        const { data } = res.body;
         expect(data.name).to.equal('Jollof Rice');
         expect(data.size).to.equal('Large');
         expect(data.price).to.equal('700');
@@ -36,19 +36,41 @@ describe('GET /:id', () => {
 });
 
 describe('POST /', () => {
-    it('should add a new meal', (done) => {
-        const newpost = {id: 5, name: 'Yam and Egg',size: 'small',price: '400'};
-        chai.request(app)
-        .post('/server/v1/meals')
-        .send(newpost)
-        .end((err, res) => {
-            const data = res.body.data;
-            expect(res).to.have.status(200);
-            expect(newpost.id).to.equal(data.id);
-            expect(newpost.name).to.equal(data.name);
-            expect(newpost.size).to.equal(data.size);
-            expect(newpost.price).to.equal(data.price);
-            done();
-        });
-    })
-})
+  it('should add a new meal', (done) => {
+    const newPost = {
+      id: 5, name: 'Yam and Egg', size: 'small', price: '400',
+    };
+    chai.request(app)
+      .post('/server/v1/meals')
+      .send(newPost)
+      .end((err, res) => {
+        const { data } = res.body;
+        expect(res).to.have.status(200);
+        expect(newPost.id).to.equal(data.id);
+        expect(newPost.name).to.equal(data.name);
+        expect(newPost.size).to.equal(data.size);
+        expect(newPost.price).to.equal(data.price);
+        done();
+      });
+  });
+});
+
+describe('PUT /:id', () => {
+  it('should Update an existing meal', (done) => {
+    const newUpdate = {
+      id: 1, name: 'Bread and Beans', size: 'small', price: '700',
+    };
+    chai.request(app)
+      .put('/server/v1/meals/1')
+      .send(newUpdate)
+      .end((err, res) => {
+        const { data } = res.body;
+        expect(res).to.have.status(200);
+        expect(newUpdate.id).to.equal(data.id);
+        expect(newUpdate.name).to.equal(data.name);
+        expect(newUpdate.size).to.equal(data.size);
+        expect(newUpdate.price).to.equal(data.price);
+        done();
+      });
+  });
+});
