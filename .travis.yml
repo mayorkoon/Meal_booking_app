@@ -4,3 +4,5 @@ node_js:
 cache:
   directories:
     - "server/node_modules"
+script:
+  - "npm run test"
