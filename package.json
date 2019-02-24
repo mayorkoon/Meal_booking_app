@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node Server/index.js",
     "dev": "nodemon --exec babel-node Server/index.js",
-    "test": "mocha --require @babel/register Server/test/*.js"
+    "test": "mocha --require @babel/register Server/test/*.js --exit"
   },
   "author": "",
   "license": "ISC",
