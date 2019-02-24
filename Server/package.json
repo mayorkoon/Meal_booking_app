@@ -6,19 +6,20 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon --exec babel-node index.js",
-    "tests" : "mocha"
+    "test": "mocha --require @babel/register test/*.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.1.0",
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
-    "@babel/cli": "^7.1.0",
     "express": "^4.16.4"
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",

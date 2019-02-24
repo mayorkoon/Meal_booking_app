@@ -9,7 +9,7 @@ import menuRoute from './routes/menu.route';
 
 const app = express();
 
-const PORT = 5000;
+const PORT = 9001;
 
 app.use(bodyParser.json());
 
@@ -26,3 +26,5 @@ app.listen(PORT, () => {
   console.log (`server is running on ${PORT}`);
 
 });
+
+export default app;
