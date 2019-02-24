@@ -43,6 +43,7 @@ describe('POST /', () => {
         .send(newpost)
         .end((err, res) => {
             const data = res.body.data;
+            expect(res).to.have.status(200);
             expect(newpost.id).to.equal(data.id);
             expect(newpost.name).to.equal(data.name);
             expect(newpost.size).to.equal(data.size);
