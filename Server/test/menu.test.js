@@ -12,7 +12,6 @@ describe('GET /', () => {
       .get('/server/v1/menu')
       .end((err, res) => {
         const { data } = res.body;
-        console.log(res.body, '<=====');
         expect(res).to.have.status(200);
         expect(res).to.be.an('object');
         expect(data).to.be.an('Array');
@@ -52,7 +51,6 @@ describe('POST /', () => {
       .send(newMenu)
       .end((err, res) => {
         const { data } = res.body;
-        console.log(res.body, '<=====');
         expect(res).to.have.status(200);
         expect(data).to.be.an('object');
         expect(newMenu.meals).to.be.an('Array');
