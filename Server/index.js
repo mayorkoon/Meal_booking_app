@@ -9,7 +9,7 @@ import menuRoute from './routes/menu.route';
 
 const app = express();
 
-const PORT = 9001;
+const PORT = process.env.PORT || 9001;
 
 app.use(bodyParser.json());
 
