@@ -10,7 +10,7 @@
     "coverage": "nyc report --reporter=lcov --reporter=text-lcov | coveralls",
     "build": "babel -d ./build ./Server -s"
   },
-  "author": "",
+  "author": "Mayorkoon",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
