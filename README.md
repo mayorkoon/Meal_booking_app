@@ -1,7 +1,6 @@
 # Meal_booking-app
 
 [![Build Status](https://travis-ci.org/mayorkoon/Meal_booking-app.svg?branch=develop)](https://travis-ci.org/mayorkoon/Meal_booking-app)
-[![Build Status](https://travis-ci.org/mayorkoon/Meal_booking-app.svg?branch=develop)](https://travis-ci.org/mayorkoon/Meal_booking-app)
 
 Book A Meal
 Book A Meal is Meal Booking web app , designed for rendering better services and providing the best meals to users
