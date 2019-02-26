@@ -16,13 +16,21 @@ Node v10.15.0 or above
 Npm v6.4 or above
 Endpoints
 GET api/v1/meals/ Caterers can get all the meals options they have uploaded
+
 POST api/v1/meals/ Catereres can add a new meal options 
+
 PUT api/vi/meals/:mealId Caterers can update their meal options using the mealId
+
 DELETE api/v1/meals/:mealId Caterers can delete a meal options using the mealId
+
 GET api/v1/menu/ Caterers and Users can Get the menu for the day
+
 POST api/v1/menu/ Caterers can Set up a new menu for a specific day
+
 GET api/v1/orders Get All Orders
+
 POST api/v1/orders customers can make orders
+
 PUT api/v1/orders/:orderId customers can modify their orders using the orderId
 
 Installation
