@@ -81,7 +81,6 @@ describe('DELETE /:id', () => {
     chai.request(app)
       .delete('/server/v1/meals/3')
       .end((err, res) => {
-        console.log(res.body, '<========');
         expect(res).to.have.status(200);
         expect(res.body).to.be.an('object');
         expect(res.body).to.have.property('status', 'success');
