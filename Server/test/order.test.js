@@ -7,7 +7,7 @@ chai.use(chaiHttp);
 const { expect } = chai;
 
 describe('GET /', () => {
-  it('should get all the menu', (done) => {
+  it('should get all the orders', (done) => {
     chai.request(app)
       .get('/server/v1/orders')
       .end((err, res) => {
@@ -23,21 +23,21 @@ describe('GET /', () => {
 
 describe('POST /', () => {
   it('should add to the existing menu', (done) => {
-    const newMenu = {
+    const newOrder = {
       orderId: 15, customerName: 'Agboola Olaide', mealName: 'Chicken Pizza', quantity: '2', price: '3000', status: 'Completed',
     };
     chai.request(app)
       .post('/server/v1/orders')
-      .send(newMenu)
+      .send(newOrder)
       .end((err, res) => {
         const { data } = res.body;
         expect(res).to.have.status(200);
-        expect(newMenu.orderId).to.equal(data.orderId);
-        expect(newMenu.customerName).to.equal(data.customerName);
-        expect(newMenu.mealName).to.equal(data.mealName);
-        expect(newMenu.price).to.equal(data.price);
-        expect(newMenu.quantity).to.equal(data.quantity);
-        expect(newMenu.status).to.equal(data.status);
+        expect(newOrder.orderId).to.equal(data.orderId);
+        expect(newOrder.customerName).to.equal(data.customerName);
+        expect(newOrder.mealName).to.equal(data.mealName);
+        expect(newOrder.price).to.equal(data.price);
+        expect(newOrder.quantity).to.equal(data.quantity);
+        expect(newOrder.status).to.equal(data.status);
         done();
       });
   });
