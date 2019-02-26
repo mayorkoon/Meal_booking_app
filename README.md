@@ -15,6 +15,7 @@ The following tools will be needed to run this application successfully:
 Node v10.15.0 or above
 Npm v6.4 or above
 Endpoints
+
 GET api/v1/meals/ Caterers can get all the meals options they have uploaded
 
 POST api/v1/meals/ Catereres can add a new meal options 
@@ -37,10 +38,15 @@ Installation
 On your Local Machine
 
 Pull the develop branch off this repository
+
 Run npm install to install all dependencies
+
 Run npm dev to start the app using nodemon
+
 Access all endpoints on localhost:9001
+
 Running the tests
+
 Run npm test in the terminal for the cloned folder.
 
 Built With
