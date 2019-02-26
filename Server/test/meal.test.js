@@ -37,19 +37,19 @@ describe('GET /:id', () => {
 
 describe('POST /', () => {
   it('should add a new meal', (done) => {
-    const newPost = {
+    const newMeal = {
       id: 5, name: 'Yam and Egg', size: 'small', price: '400',
     };
     chai.request(app)
       .post('/server/v1/meals')
-      .send(newPost)
+      .send(newMeal)
       .end((err, res) => {
         const { data } = res.body;
         expect(res).to.have.status(200);
-        expect(newPost.id).to.equal(data.id);
-        expect(newPost.name).to.equal(data.name);
-        expect(newPost.size).to.equal(data.size);
-        expect(newPost.price).to.equal(data.price);
+        expect(newMeal.id).to.equal(data.id);
+        expect(newMeal.name).to.equal(data.name);
+        expect(newMeal.size).to.equal(data.size);
+        expect(newMeal.price).to.equal(data.price);
         done();
       });
   });
