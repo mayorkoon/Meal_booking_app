@@ -7,7 +7,10 @@
     "start": "node ./build/index.js",
     "dev": "nodemon --exec babel-node Server/index.js",
     "test": "nyc mocha --require @babel/register Server/test/*.js --exit",
-    "coverage": "nyc report --reporter=lcov --reporter=text-lcov | coveralls",
+    "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
+    "coveralls-coverage": "coveralls < lcov.info", 
+    "codeclimate-coverage": "codeclimate-test-reporter < lcov.info",
+    "coverage": "nyc npm test && npm run generate-lcov && npm run coveralls-coverage && npm run codeclimate-coverage",
     "build": "babel -d ./build ./Server -s"
   },
   "author": "Mayorkoon",
