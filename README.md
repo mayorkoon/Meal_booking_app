@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/mayorkoon/Meal_booking-app.svg?branch=develop)](https://travis-ci.org/mayorkoon/Meal_booking-app)
 [![Coverage Status](https://coveralls.io/repos/github/mayorkoon/Meal_booking-app/badge.svg?branch=develop)](https://coveralls.io/github/mayorkoon/Meal_booking-app?branch=develop)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/ed8cc927211f9e6d6b5b/maintainability)](https://codeclimate.com/github/mayorkoon/Meal_booking-app/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ed8cc927211f9e6d6b5b/test_coverage)](https://codeclimate.com/github/mayorkoon/Meal_booking-app/test_coverage)
 Book A Meal
 Book A Meal is Meal Booking web app , designed for rendering better services and providing the best meals to users
 
