@@ -1,5 +1,7 @@
 # Meal_booking_app
 
+[![Build Status](https://travis-ci.org/mayorkoon/Meal_booking-app.svg?branch=develop)](https://travis-ci.org/mayorkoon/Meal_booking-app)
+
 [![Coverage Status](https://coveralls.io/repos/github/mayorkoon/Meal_booking-app/badge.svg?branch=develop)](https://coveralls.io/github/mayorkoon/Meal_booking-app?branch=develop)
 
 Book A Meal
