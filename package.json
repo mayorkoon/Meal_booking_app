@@ -8,7 +8,7 @@
     "dev": "nodemon --exec babel-node Server/index.js",
     "test": "nyc mocha --require @babel/register Server/test/*.js --exit",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
-    "coveralls-coverage": "coveralls < lcov.info", 
+    "coveralls-coverage": "coveralls < lcov.info",
     "codeclimate-coverage": "codeclimate-test-reporter < lcov.info",
     "coverage": "nyc npm test && npm run generate-lcov && npm run coveralls-coverage && npm run codeclimate-coverage",
     "build": "babel -d ./build ./Server -s"
@@ -26,6 +26,7 @@
     "@babel/preset-env": "^7.3.1",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
+    "codeclimate-test-reporter": "^0.5.1",
     "coveralls": "^3.0.3",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
