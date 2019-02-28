@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 
-//Routes
+// Routes
 import mealRoutes from './routes/meal.routes';
 import orderRoutes from './routes/order.routes';
 import menuRoute from './routes/menu.route';
@@ -23,7 +23,7 @@ app.use('/server/v1/orders', orderRoutes);
 app.use('/server/v1/menu', menuRoute);
 
 app.listen(PORT, () => {
-  console.log (`server is running on ${PORT}`);
+  console.log(`server is running on ${PORT}`);
 
 });
 

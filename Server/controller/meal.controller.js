@@ -1,4 +1,4 @@
-import MealService from '../services/meal.service'; 
+import MealService from '../services/meal.service';
 
 const MealController = {
   fetchAllMeals(req, res) {
@@ -41,7 +41,7 @@ const MealController = {
       status: 'success',
       data: updatedMeal,
     }).status(201);
-  }
+  },
 };
 
 export default MealController;
